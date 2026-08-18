@@ -1,0 +1,10 @@
+# Compiled C++ binaries
+bin/
+
+# macOS files
+.DS_Store
+
+# Common compiled files
+*.out
+*.exe
+*.o
