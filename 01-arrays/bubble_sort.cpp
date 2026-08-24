@@ -7,7 +7,7 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
-    for(int itr=1;itr<=n-1;itr++){
+    for(int itr=1;itr<=n-2;itr++){
         for(int j=0;j<=n-itr-1;j++){
             if(a[j]>a[j+1])
             swap(a[j],a[j+1]);
