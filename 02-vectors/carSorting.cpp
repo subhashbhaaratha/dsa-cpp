@@ -1,0 +1,26 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+bool compare(pair<int,int>p1,pair<int,int>p2){
+    int value1=p1.first*p1.first+p1.second*p1.second;
+    int value2=p2.first*p2.first+p2.second*p2.second;
+    if(value1==value2){
+        return p1.first<p2.first;
+    }
+    return value1<value2;
+}
+int main(){
+    int n;
+    cin>>n;
+    vector<pair<int,int>> v;
+    for(int i=0;i<n;i++){
+        int x,y;
+        cin>>x>>y;
+        v.push_back(make_pair(x,y));
+    }
+    cout<<endl;
+    sort(v.begin(),v.end(),compare);
+    for(auto p:v){
+        cout<<p.first<<','<<p.second<<endl;
+    }
+}
