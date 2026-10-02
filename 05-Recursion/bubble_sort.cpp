@@ -30,10 +30,10 @@ int main()
 {
    int arr[]={5,4,3,1,2};
    int n=sizeof(arr)/sizeof(int);
-//    bubble_sort(arr,n); 
-//    for(int i=0;i<n;i++)
-//    cout<<arr[i]<<" ";
-//    cout<<endl;
+   bubble_sort(arr,n); 
+   for(int i=0;i<n;i++)
+   cout<<arr[i]<<" ";
+   cout<<endl;
    bubble_sort_recursive(arr,0,n);
    for(int i=0;i<n;i++)
    cout<<arr[i]<<" ";
