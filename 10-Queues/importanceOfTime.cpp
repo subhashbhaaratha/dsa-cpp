@@ -30,7 +30,7 @@ int main()
             count++ ;
         }
         q1.pop() ;
-        q2.pop() ;
+        q2.pop() ; 
         count++ ;
     }
     cout << count ;

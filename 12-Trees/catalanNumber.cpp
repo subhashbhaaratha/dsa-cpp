@@ -36,6 +36,5 @@ int main()
     cin >> n ;
     cout << "No of BST's : " <<  f(n) << endl ;
      cout << "No of unlabbeled trees : " << f(n) << endl;
-    cout << "No of Binary Trees : " << fact(n) * f(n) << endl ;
-   
+    cout << "No of Binary Trees : " << fact(n) * f(n) << endl ;   
 }
